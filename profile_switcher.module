@@ -128,15 +128,14 @@ function profile_switcher_admin_settings_submit($form, &$form_state) {
     // files are added to /profiles.  They are added after they are active.  We
     // need to add them before that so they are BOTH active and enabled. 
     
+    // Cache a fully-built schema.
+    drupal_get_schema(NULL, TRUE);
+    system_rebuild_module_data();
+    
     // Flush all caches to ensure that any full bootstraps during the installer
     // do not leave stale cached data, and that any content types or other items
     // registered by the install profile are registered correctly.
     drupal_flush_all_caches();
-    
-    // Cache a fully-built schema.
-    //drupal_get_schema(NULL, TRUE);
-  
-    //system_rebuild_module_data();
     
   } 
   
