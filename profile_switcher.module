@@ -1,20 +1,8 @@
 <?php
 /**
  * @file
- * Community Media Project Module
+ * Profie Switcher Module
  */
-
-
-/**
- * Implements hook_help().
- */
-function profile_switcher_help($section) {
-  switch ($section) {
-    case 'admin/help#profile_switcher':
-      return t('Core project functionality.');
-      break;
-  }
-}
 
 
 /**
@@ -25,7 +13,7 @@ function profile_switcher_menu() {
 
   $items['admin/config/development/profile-switcher'] = array(
     'title' => 'Profile Switcher',
-    'description' => 'Configuration options for the Community Media Project.',
+    'description' => '',
     'page callback' => 'drupal_get_form',
     'page arguments' => array('profile_switcher_admin_settings'),
     'access arguments' => array('access administration pages'),
