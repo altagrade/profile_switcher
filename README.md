@@ -18,6 +18,8 @@ Go to Configuration > Development > Profile Switcher (admin/config/development/p
 # Credits
 
 The module was initially created for Drupal 7 by University of Colorado Boulder (https://www.drupal.org/u/university-of-colorado-boulder).
-Ported to Backdrop by AltaGrade team (https://www.altagrade.com)
+Ported to Backdrop by AltaGrade team (https://www.altagrade.com).
 
 # License
+
+For license information please read LICENSE.txt file.
