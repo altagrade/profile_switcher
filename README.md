@@ -1,7 +1,3 @@
-# Project name
-
-Profile Switcher
-
 # Description
 
 The Profile Switcher module is used to switch between install profiles found in the /core/profile directory. 
